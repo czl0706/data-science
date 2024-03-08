@@ -1,0 +1,16 @@
+requests	
+beautifulsoup4	
+# lxml	
+# scrapy
+pyquery	
+click	
+tqdm	
+pandas
+# httpx	
+# pydantic
+tensorflow-cpu==2.15.0	
+torch==2.2.0	
+torchvision==0.17.0	
+# click
+scikit-learn==1.4.1.post1
+opencv-python==4.9.0.80

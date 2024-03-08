@@ -1,0 +1,11 @@
+rm ./*.json*
+python 110511233.py crawl
+python 110511233.py push 0304 0910
+python 110511233.py push 0510 1110
+python 110511233.py push 0101 1231
+python 110511233.py popular 0401 1231
+python 110511233.py popular 0101 0510
+python 110511233.py keyword 0101 1231 李多慧
+python 110511233.py keyword 0501 1231 河北
+python 110511233.py keyword 0101 0910 水
+
