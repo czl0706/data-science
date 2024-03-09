@@ -250,8 +250,7 @@ def keyword_thread(filtered_articles, keyword):
         if not ('※ 發信站' in x and '作者' in x):
             return
         
-        x = x.split('※ 發信站')[0]
-        x = '作者' + x.split('作者')[1]
+        x = x[x.find('作者') - 2:x.find('※ 發信站')]
         
         if keyword not in x:
             return
