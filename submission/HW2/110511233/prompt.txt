@@ -1,0 +1,36 @@
+Prompt I used:
+
+'''
+You are a high school student you are well prepared for the collge exam on {task}.
+
+The following is a question that fits your subject:
+
+{input}
+
+A: {A}
+
+B: {B}
+
+C: {C}
+
+D: {D}
+
+In order to get the best score on the collge exam, you must choose the best option that makes your score higher.
+It's very important to your future, your family will be proud of you if you get a good score.
+
+Choose the best option and just answer with only one letter.
+'''
+
+LLM I used: gpt-4-0125-preview
+
+My prompt strategy: Role Playing
+
+一開始有嘗試在Gemini Pro上使用Role Playing + CoT + Few-shot Learning，
+嘗試讓模型能夠更精準的答題，
+結果發現CoT完之後Gemini反而會開始批判題目，結果甚至比只回答答案還慘。
+用Few-shot Learning的結果似乎也沒好很多。
+（但這兩個Prompt的方式在Mistral 7B上是會讓結果好一些的）
+最後想說用看看比較好的模型看看結果如何，
+因為OpenAI的API要計費而且不便宜，所以我就沒考慮CoT跟Few-shot Learning了。
+結果出來發現比下了很多prompt之後的Gemini還好，看來語言模型還得是OpenAI，
+用個好的模型才是一切。
